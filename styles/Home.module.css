@@ -82,7 +82,23 @@
   border: 1px solid #eaeaea;
   border-radius: 10px;
   transition: color 0.15s ease, border-color 0.15s ease;
-  max-width: 300px;
+  width: 40%;
+
+
+  display: grid;
+  grid-template-columns: 1fr 2fr;
+  align-items: center;
+  row-gap: 1rem;
+
+  font-size: 1.5rem;
+}
+
+.card input {
+  border: none;
+  outline: 1px solid #222;
+  border-radius: 50px;
+  font-size: 1.5rem;
+  padding: 1rem;
 }
 
 .card:hover,
@@ -101,6 +117,36 @@
   margin: 0;
   font-size: 1.25rem;
   line-height: 1.5;
+}
+
+.status {
+  grid-column: span 2;
+  font-size: 1rem;
+  font-family: monospace;
+  font-weight: bold;
+  color: red;
+  border: 3px solid red;
+  border-radius: 10px;
+  padding: 0.5rem;
+  margin: 1rem;
+  text-align: center;
+}
+
+.submitBtn {
+  background-color: #0070f3;
+  font-size: 1.5rem;
+  color: wheat;
+  grid-column: span 2;
+  border-radius: 50px;
+  outline: none;
+  border: none;
+  cursor: pointer;
+  padding: 1rem;
+}
+
+.submitBtn:hover {
+  font-weight: bold;
+  color: white;
 }
 
 .logo {
